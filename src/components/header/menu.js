@@ -8,13 +8,14 @@ import { ReactComponent as sport } from "../../icons/sport.svg";
 import { ReactComponent as world } from "../../icons/world.svg";
 import { ReactComponent as testtube } from "../../icons/testtube.svg";
 import { ReactComponent as code } from "../../icons/code.svg";
-import { StickyContainer, Sticky } from "react-sticky";
+import { Sticky } from "react-sticky";
 import theme from "../data/theme";
 
 const data = [
   <Circle
     color={theme.grey}
     key="1"
+    link="/"
     shadow="-webkit-box-shadow: 0px 4px 6px 0px rgba(187,206,221,0.5);
     -moz-box-shadow: 0px 4px 6px 0px rgba(187,206,221,0.5);
     box-shadow: 0px 4px 6px 0px rgba(187,206,221,0.5);"
@@ -23,6 +24,7 @@ const data = [
   <Circle
     color={theme.red}
     key="2"
+    link="/"
     shadow="-webkit-box-shadow: 0px 4px 6px 0px rgba(255,111,111,0.5);
   -moz-box-shadow: 0px 4px 6px 0px rgba(255,111,111,0.5);
   box-shadow: 0px 4px 6px 0px rgba(255,111,111,0.5);"
@@ -31,6 +33,7 @@ const data = [
   <Circle
     color={theme.blue}
     key="3"
+    link="/"
     shadow="-webkit-box-shadow: 0px 4px 6px 0px rgba(134,148,255,0.5);
   -moz-box-shadow: 0px 4px 6px 0px rgba(134,148,255,0.5);
   box-shadow: 0px 4px 6px 0px rgba(134,148,255,0.5);
@@ -40,6 +43,7 @@ const data = [
   <Circle
     color={theme.purple}
     key="4"
+    link="/"
     shadow="-webkit-box-shadow: 0px 4px 6px 0px rgba(177,98,255,0.5);
   -moz-box-shadow: 0px 4px 6px 0px rgba(177,98,255,0.5);
   box-shadow: 0px 4px 6px 0px rgba(177,98,255,0.5);"
@@ -48,6 +52,7 @@ const data = [
   <Circle
     color={theme.yellow}
     key="5"
+    link="/"
     shadow="-webkit-box-shadow: 0px 4px 6px 0px rgba(255,215,82,0.5);
   -moz-box-shadow: 0px 4px 6px 0px rgba(255,215,82,0.5);
   box-shadow: 0px 4px 6px 0px rgba(255,215,82,0.5);"
@@ -56,6 +61,7 @@ const data = [
   <Circle
     color={theme.pink}
     key="6"
+    link="/"
     shadow="-webkit-box-shadow: 0px 4px 6px 0px rgba(255,101,214,0.5);
   -moz-box-shadow: 0px 4px 6px 0px rgba(255,101,214,0.5);
   box-shadow: 0px 4px 6px 0px rgba(255,101,214,0.5);"

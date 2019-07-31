@@ -1,17 +1,20 @@
 import styled from "styled-components/macro";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Circle extends Component {
   render() {
     const Source = this.props.source;
     return (
-      <CircleBg
-        color={this.props.color}
-        marginl={this.props.marginl}
-        shadow={this.props.shadow}
-      >
-        <Source width={this.props.width} height={this.props.height} />
-      </CircleBg>
+      <Link to={this.props.link}>
+        <CircleBg
+          color={this.props.color}
+          marginl={this.props.marginl}
+          shadow={this.props.shadow}
+        >
+          <Source width={this.props.width} height={this.props.height} />
+        </CircleBg>
+      </Link>
     );
   }
 }
@@ -31,6 +34,7 @@ export const CircleBg = styled.div`
   background-color: ${props => props.color};
   box-shadow: ${props => props.shadow};
   margin-left: ${props => props.marginl};
+  cursor: pointer;
   outline: none;
 
   &:focus {

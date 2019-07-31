@@ -19,9 +19,7 @@ export class header extends Component {
           </Distance>
         </Wrapper>
         <Wrapper>
-          <Distance>
-            <Searchbar />
-          </Distance>
+          <Searchbar />
         </Wrapper>
         <Menu />
       </Anchor>
@@ -33,7 +31,7 @@ export default header;
 
 export const Background = styled.div`
   width: 100%;
-  height: 207px;
+  height: 187px;
   left: 0;
   right: 0;
 
