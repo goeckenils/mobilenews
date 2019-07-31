@@ -11,12 +11,12 @@ export class header extends Component {
       <Anchor>
         <Background />
         <Wrapper>
-          <DistanceL>
+          <Distance>
             <Information>
               <H1>News Today</H1>
               <Sideinf>{moment(new Date()).format("l")}</Sideinf>
             </Information>
-          </DistanceL>
+          </Distance>
         </Wrapper>
         <Wrapper>
           <Distance>
@@ -33,12 +33,12 @@ export default header;
 
 export const Background = styled.div`
   width: 100%;
-  height: 117.6px;
+  height: 207px;
   left: 0;
   right: 0;
 
   background-color: ${props => props.theme.bg};
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 10px 10px;
   position: absolute;
 `;
 

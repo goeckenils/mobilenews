@@ -15,9 +15,20 @@
   cursor: pointer;
   border: none;
 }
+.menu-item:focus {
+  outline: none;
+}
 .menu-wrapper {
   padding: 0;
   margin: 0;
+  height: 60px;
+}
+.menu-item-wrapper {
+  padding-right: 20px;
+  outline: none;
+}
+.menu-item-wrapper:focus {
+  outline: none;
 }
 .menu-item-wrapper.active {
   border: none !important;

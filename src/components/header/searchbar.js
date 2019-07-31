@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import styled from "styled-components/macro";
+import { ReactComponent as Search } from "../../icons/search.svg";
 
 class searchbar extends Component {
   render() {
     return (
       <Wrapper>
         <Searchbar />
-        <Icon />
+        <SearchN />
       </Wrapper>
     );
   }
@@ -23,7 +24,7 @@ export const Searchbar = styled.input`
   width: 100%;
   border-radius: 50px;
   border: none;
-  font-size: 25px;
+  font-size: 15px;
   padding: 20px;
   background-color: ${props => props.theme.white};
   color: ${props => props.theme.grey};
@@ -39,12 +40,10 @@ export const Searchbar = styled.input`
   }
 `;
 
-export const Icon = styled.div`
-  width: 14px;
-  height: 14px;
+export const SearchN = styled(Search)`
+  width: 20px;
+  height: 20px;
   position: absolute;
-  border-radius: 50px;
-  background-color: ${props => props.theme.red};
-  right: 20px;
-  top: 14px;
+  right: 15px;
+  top: 10px;
 `;

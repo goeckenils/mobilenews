@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const H1 = styled.h1`
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
-  line-height: 1.47;
+  line-height: 1.2;
   color: ${props => props.theme.nightblue};
 `;
 export const H2 = styled.h2`
@@ -33,9 +33,9 @@ export const Quote = styled.p`
 `;
 
 export const Sideinf = styled.p`
-  font-size: 20px;
+  font-size: 15px;
   font-weight: lighter;
-  line-height: 1.24;
+  line-height: 0.4;
   color: ${props => props.theme.side};
 `;
 export const para = styled.p`

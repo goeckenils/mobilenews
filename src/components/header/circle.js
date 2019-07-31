@@ -1,11 +1,15 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import React, { Component } from "react";
 
 class Circle extends Component {
   render() {
     const Source = this.props.source;
     return (
-      <CircleBg color={this.props.color} marginl={this.props.marginl}>
+      <CircleBg
+        color={this.props.color}
+        marginl={this.props.marginl}
+        shadow={this.props.shadow}
+      >
         <Source width={this.props.width} height={this.props.height} />
       </CircleBg>
     );
@@ -13,13 +17,13 @@ class Circle extends Component {
 }
 
 Circle.defaultProps = {
-  width: "11.3px",
-  height: "11.3px"
+  width: "23px",
+  height: "23px"
 };
 
 export const CircleBg = styled.div`
-  height: 24px;
-  width: 24px;
+  height: 47px;
+  width: 47px;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -27,6 +31,11 @@ export const CircleBg = styled.div`
   background-color: ${props => props.color};
   box-shadow: ${props => props.shadow};
   margin-left: ${props => props.marginl};
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export default Circle;
