@@ -73,7 +73,7 @@ class Menu extends Component {
   render() {
     return (
       <Wrapper>
-        <Sticky topOffset={140}>
+        <Sticky topOffset={120}>
           {({ style }) => (
             <div style={style}>
               <ScrollMenu translate={20} data={data} />
