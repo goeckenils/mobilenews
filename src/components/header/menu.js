@@ -87,6 +87,4 @@ class Menu extends Component {
 
 export default Menu;
 
-export const Wrapper = styled.div`
-  padding-top: 20px;
-`;
+export const Wrapper = styled.div``;

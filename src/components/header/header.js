@@ -19,7 +19,9 @@ export class header extends Component {
           </Distance>
         </Wrapper>
         <Wrapper>
-          <Searchbar />
+          <Distance>
+            <Searchbar />
+          </Distance>
         </Wrapper>
         <Menu />
       </Anchor>
