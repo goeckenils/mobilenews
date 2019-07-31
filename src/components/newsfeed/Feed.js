@@ -10,6 +10,11 @@ class Feed extends Component {
         <Article />
         <Article />
         <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
       </div>
     );
   }

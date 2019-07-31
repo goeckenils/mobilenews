@@ -8,6 +8,7 @@ import { ReactComponent as sport } from "../../icons/sport.svg";
 import { ReactComponent as world } from "../../icons/world.svg";
 import { ReactComponent as testtube } from "../../icons/testtube.svg";
 import { ReactComponent as code } from "../../icons/code.svg";
+import { StickyContainer, Sticky } from "react-sticky";
 import theme from "../data/theme";
 
 const data = [
@@ -66,7 +67,13 @@ class Menu extends Component {
   render() {
     return (
       <Wrapper>
-        <ScrollMenu translate={20} data={data} />
+        <Sticky topOffset={140}>
+          {({ style }) => (
+            <div style={style}>
+              <ScrollMenu translate={20} data={data} />
+            </div>
+          )}
+        </Sticky>
       </Wrapper>
     );
   }
