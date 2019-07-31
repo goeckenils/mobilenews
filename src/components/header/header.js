@@ -33,7 +33,7 @@ export default header;
 
 export const Background = styled.div`
   width: 100%;
-  height: 353px;
+  height: 117.6px;
   left: 0;
   right: 0;
 

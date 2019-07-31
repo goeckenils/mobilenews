@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Searchbar = styled.input`
-  height: 70px;
+  height: 23px;
   width: 100%;
   border-radius: 50px;
   border: none;
@@ -40,8 +40,8 @@ export const Searchbar = styled.input`
 `;
 
 export const Icon = styled.div`
-  width: 42px;
-  height: 42px;
+  width: 14px;
+  height: 14px;
   position: absolute;
   border-radius: 50px;
   background-color: ${props => props.theme.red};

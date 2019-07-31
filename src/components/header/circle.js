@@ -13,13 +13,13 @@ class Circle extends Component {
 }
 
 Circle.defaultProps = {
-  width: "34px",
-  height: "34px"
+  width: "11.3px",
+  height: "11.3px"
 };
 
 export const CircleBg = styled.div`
-  height: 72px;
-  width: 72px;
+  height: 24px;
+  width: 24px;
   border-radius: 50px;
   display: flex;
   align-items: center;
