@@ -7,14 +7,15 @@ export const H1 = styled.h1`
   color: ${props => props.theme.nightblue};
 `;
 export const H2 = styled.h2`
-  font-size: 35px;
+  font-size: 25px;
   font-weight: medium;
   line-height: 1.41;
   color: ${props => props.theme.nightblue};
 `;
 export const H3 = styled.h3`
-  font-size: 25px;
+  font-size: 14px;
   font-weight: medium;
+  margin-top: 20px;
   line-height: 1.3;
   color: ${props => props.theme.nightblue};
 `;
