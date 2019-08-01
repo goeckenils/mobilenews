@@ -20,7 +20,7 @@ class Feed extends Component {
                     <Article
                         image={urlToImage}
                         heading={title}
-                        date={moment(publishedAt).startOf('day').fromNow()}
+                        date={moment(publishedAt).startOf('hour').fromNow()}
 
                     // date={publishedAt}
                     // publisher={name}
