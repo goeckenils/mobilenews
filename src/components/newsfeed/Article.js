@@ -45,7 +45,7 @@ export const TextWrapper = styled.div`
 export const Image = styled.div`
   width: 75px;
   height: 75px;
-  background-color: ${props => props.theme.dark};
+  border: 2px solid ${props => props.theme.grey}
   border-radius: 10px;
 `;
 
