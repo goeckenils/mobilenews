@@ -8,7 +8,7 @@ class Article extends Component {
       <div>
         <Wrapper>
           <TextWrapper>
-            <H3>{this.props.title}</H3>
+            <H3>{this.props.heading}</H3>
             <Discription>
               {this.props.author} - {this.props.location} - {this.props.date}
             </Discription>
@@ -43,7 +43,6 @@ export const Image = styled.div`
   border: 2px solid ${props => props.theme.grey};
   border-radius: 10px;
   overflow: hidden;
-  position: relative;
 `;
 
 export const Underline = styled.div`

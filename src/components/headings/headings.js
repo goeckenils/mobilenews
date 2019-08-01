@@ -14,14 +14,14 @@ export const H2 = styled.h2`
 `;
 export const H3 = styled.h3`
   font-size: 14px;
-  font-weight: medium;
+  font-weight: 500;
   margin-top: 20px;
   line-height: 1.3;
   color: ${props => props.theme.nightblue};
 `;
 export const H4 = styled.h3`
   font-size: 25px;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 1.3;
   color: ${props => props.theme.nightblue};
 `;
