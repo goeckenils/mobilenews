@@ -51,3 +51,10 @@
   padding: 0px;
   cursor: pointer;
 }
+
+img {
+  width: 75px;
+  height: 75px;
+  background-size: contain;
+  background-position: center center;
+}

@@ -4,23 +4,18 @@ import { H3, Sideinf } from "../headings/headings";
 
 class Article extends Component {
   render() {
-    const data = {
-      articleHeading:
-        "Need A Beach Vacation or City Break? Waikiki Has You Covered",
-      location: "Hannover",
-      date: "23min",
-      publisher: "Forbes"
-    };
     return (
       <div>
         <Wrapper>
           <TextWrapper>
-            <H3>{data.articleHeading}</H3>
+            <H3>{this.props.title}</H3>
             <Discription>
-              {data.publisher} - {data.location} - {data.date}
+              {this.props.author} - {this.props.location} - {this.props.date}
             </Discription>
           </TextWrapper>
-          <Image />
+          <Image><img
+            src={this.props.image}
+          /></Image>
         </Wrapper>
         <FlexWrapper>
           <Underline />
@@ -45,8 +40,10 @@ export const TextWrapper = styled.div`
 export const Image = styled.div`
   width: 75px;
   height: 75px;
-  border: 2px solid ${props => props.theme.grey}
+  border: 2px solid ${props => props.theme.grey};
   border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 `;
 
 export const Underline = styled.div`

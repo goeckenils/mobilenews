@@ -36,6 +36,8 @@ export const CircleBg = styled.div`
   margin-left: ${props => props.marginl};
   cursor: pointer;
   outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 
   &:focus {
     outline: none;
