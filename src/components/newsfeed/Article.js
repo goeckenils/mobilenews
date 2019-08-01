@@ -10,7 +10,7 @@ class Article extends Component {
           <TextWrapper>
             <H3>{this.props.heading}</H3>
             <Discription>
-              {this.props.author} - {this.props.location} - {this.props.date}
+              {this.props.date}
             </Discription>
           </TextWrapper>
           <Image><img

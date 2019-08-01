@@ -15,7 +15,7 @@ export const H2 = styled.h2`
 export const H3 = styled.h3`
   font-size: 14px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 10px;
   line-height: 1.3;
   color: ${props => props.theme.nightblue};
 `;

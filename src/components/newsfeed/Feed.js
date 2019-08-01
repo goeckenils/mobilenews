@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Article from "../newsfeed/Article";
 import axios from "axios";
+import moment from "moment"
 
 class Feed extends Component {
     state = {
@@ -14,12 +15,13 @@ class Feed extends Component {
     render() {
 
         const CreateArticle = this.state.data.map(
-            ({ title, author, publishedAt, urlToImage }) => {
+            ({ title, publishedAt, urlToImage }) => {
                 return (
                     <Article
                         image={urlToImage}
                         heading={title}
-                        location={author}
+                        date={moment(publishedAt).startOf('day').fromNow()}
+
                     // date={publishedAt}
                     // publisher={name}
                     ></Article>
